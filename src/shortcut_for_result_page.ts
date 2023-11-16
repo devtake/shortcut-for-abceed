@@ -2,13 +2,13 @@ import { clickBackButton } from './common_element'
 
 export const handleKeyDownEventForResultPage = (event: KeyboardEvent): void => {
   switch (event.code) {
-    case 'ArrowRight':
+    case 'KeyK':
       clickNextTestButton()
       break
-    case 'ArrowLeft':
+    case 'KeyJ':
       clickTryAgainButton()
       break
-    case 'Space':
+    case 'KeyN':
       clickQuizButton()
       break
     case 'Escape':

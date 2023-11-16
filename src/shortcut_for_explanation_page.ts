@@ -7,37 +7,37 @@ export const handleKeyDownEventForExplanationPage = (event: KeyboardEvent): void
 
   if (pressedKeyMap.get('Shift') !== undefined) {
     switch (event.code) {
-      case 'ArrowLeft':
+      case 'KeyJ':
         clickPrevCommentaryLink()
         break
-      case 'ArrowRight':
+      case 'KeyK':
         clickNextCommentaryLink()
         break
     }
   } else if (pressedKeyMap.get('Alt') !== undefined) {
     switch (event.code) {
-      case 'ArrowLeft':
+      case 'KeyJ':
         clickSoundControllerButton(0)
         break
-      case 'ArrowRight':
+      case 'KeyK':
         clickSoundControllerButton(4)
         break
     }
   } else {
     switch (event.code) {
-      case 'ArrowLeft':
+      case 'KeyJ':
         clickSoundControllerButton(1)
         break
-      case 'ArrowRight':
+      case 'KeyK':
         clickSoundControllerButton(3)
         break
-      case 'ArrowUp':
+      case 'KeyI':
         changeVoiceSpeedSelectBox(-1)
         break
       case 'ArrowDown':
         changeVoiceSpeedSelectBox(1)
         break
-      case 'Space':
+      case 'KeyN':
         clickSoundControllerButton(2)
         break
       case 'Escape':

@@ -36,39 +36,39 @@ var handleKeyDownEventForExplanationPage = function (event) {
     pressedKeyMap.set(event.key, true);
     if (pressedKeyMap.get('Shift') !== undefined) {
         switch (event.code) {
-            case 'ArrowLeft':
+            case 'KeyJ':
                 clickPrevCommentaryLink();
                 break;
-            case 'ArrowRight':
+            case 'KeyK':
                 clickNextCommentaryLink();
                 break;
         }
     }
     else if (pressedKeyMap.get('Alt') !== undefined) {
         switch (event.code) {
-            case 'ArrowLeft':
+            case 'KeyJ':
                 clickSoundControllerButton(0);
                 break;
-            case 'ArrowRight':
+            case 'KeyK':
                 clickSoundControllerButton(4);
                 break;
         }
     }
     else {
         switch (event.code) {
-            case 'ArrowLeft':
+            case 'KeyJ':
                 clickSoundControllerButton(1);
                 break;
-            case 'ArrowRight':
+            case 'KeyK':
                 clickSoundControllerButton(3);
                 break;
-            case 'ArrowUp':
+            case 'KeyI':
                 changeVoiceSpeedSelectBox(-1);
                 break;
             case 'ArrowDown':
                 changeVoiceSpeedSelectBox(1);
                 break;
-            case 'Space':
+            case 'KeyN':
                 clickSoundControllerButton(2);
                 break;
             case 'Escape':
@@ -130,13 +130,13 @@ exports.handleKeyDownEventForResultPage = void 0;
 var common_element_1 = __webpack_require__(/*! ./common_element */ "./src/common_element.ts");
 var handleKeyDownEventForResultPage = function (event) {
     switch (event.code) {
-        case 'ArrowRight':
+        case 'KeyK':
             clickNextTestButton();
             break;
-        case 'ArrowLeft':
+        case 'KeyJ':
             clickTryAgainButton();
             break;
-        case 'Space':
+        case 'KeyN':
             clickQuizButton();
             break;
         case 'Escape':
@@ -175,16 +175,16 @@ exports.handleKeyDownEventForWordTestPage = void 0;
 var common_element_1 = __webpack_require__(/*! ./common_element */ "./src/common_element.ts");
 var handleKeyDownEventForWordTestPage = function (event) {
     switch (event.code) {
-        case 'ArrowRight':
+        case 'KeyK':
             clickKnownButton();
             break;
-        case 'ArrowLeft':
+        case 'KeyJ':
             clickUnknownButton();
             break;
-        case 'ArrowUp':
+        case 'KeyI':
             clickComentaryButton();
             break;
-        case 'Space':
+        case 'KeyN':
             clickPlaybackButton();
             break;
         case 'Escape':

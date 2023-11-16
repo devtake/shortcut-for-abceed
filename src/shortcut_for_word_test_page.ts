@@ -2,16 +2,16 @@ import { clickBackButton } from './common_element'
 
 export const handleKeyDownEventForWordTestPage = (event: KeyboardEvent): void => {
   switch (event.code) {
-    case 'ArrowRight':
+    case 'KeyK':
       clickKnownButton()
       break
-    case 'ArrowLeft':
+    case 'KeyJ':
       clickUnknownButton()
       break
-    case 'ArrowUp':
+    case 'KeyI':
       clickComentaryButton()
       break
-    case 'Space':
+    case 'KeyN':
       clickPlaybackButton()
       break
     case 'Escape':
